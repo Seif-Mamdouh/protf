@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import seifPic from "../../assets/pics/seif.png";
+import seifPic from "../../assets/pics/seif2.png";
 
 
 interface Props {
@@ -10,12 +10,15 @@ interface Props {
 const header = (props: Props) => {
     return (
       <div className="body">
-        <div className="picture">
-          <img
-            src={seifPic}
-            alt="Seif"
-            style={{ width: "200px", height: "200px" }}
-          />
+        <img
+          src={seifPic}
+          alt="Seif"
+          style={{ width: "300px", height: "300px", marginTop: "2%"}}
+        />
+        <div className="buttons">
+          <button >Expierence</button>
+          <button>Education</button>
+          <button>Contact Me</button>
         </div>
       </div>
     );
